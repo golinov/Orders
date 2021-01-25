@@ -1,9 +1,9 @@
-Install project:<br>
+Install project:
     <p>- set settings for mailer;</p>
-    - php artisan migrate:fresh --seed;
+    <p>- php artisan migrate:fresh --seed;</p>
     <p>- php artisan queue:work.</p>
 Tests:<br>
-    - vendor/bin/phpunit;<br>
-Configs:<br>
-    - config/blocklist.php - list of countries which need to blocked;<br>
-    - config/mail.php, 'to' - email for send order details.<br>
+    <p>- vendor/bin/phpunit;</p>
+Configs:
+    <p>- config/blocklist.php - list of countries which need to blocked;</p>
+    <p>- config/mail.php, 'to' - email for send order details.</p>
