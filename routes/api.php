@@ -18,4 +18,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('order', \App\Http\Controllers\OrderController::class);
+Route::post('order', 'OrderController@store');
+
+Route::resource('product', 'ProductController')->only('index', 'show');

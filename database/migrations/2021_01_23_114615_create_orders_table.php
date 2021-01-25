@@ -17,8 +17,8 @@ class CreateOrdersTable extends Migration
             $table->id();
             $table->string('email');
             $table->string('shipping_address_1');
-            $table->string('shipping_address_2');
-            $table->string('shipping_address_3');
+            $table->string('shipping_address_2')->nullable();
+            $table->string('shipping_address_3')->nullable();
             $table->string('city');
             $table->string('country_code');
             $table->string('zip_postal_code');

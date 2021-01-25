@@ -22,7 +22,7 @@ class ProductFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->unique()->word,
+            'name' => $this->faker->unique()->company,
             'image_url' => $this->faker->unique()->imageUrl()
         ];
     }

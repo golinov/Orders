@@ -11,7 +11,7 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
-class OrderSubmissionEvent
+class OrderCreated
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
@@ -20,7 +20,7 @@ class OrderSubmissionEvent
     /**
      * Create a new event instance.
      *
-     * @param Order $order
+     * @param $order
      */
     public function __construct(Order $order)
     {
