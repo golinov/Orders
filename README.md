@@ -1,5 +1,5 @@
 Install project:<br>
-    - set settings for mailer;<br>
+    <p>- set settings for mailer;</p>
     - php artisan migrate:fresh --seed;<br>
     - php artisan queue:work.<br>
 Tests:<br>
